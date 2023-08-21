@@ -32,6 +32,14 @@ version = '0.21.2'
 
 [auth.redirections]
 clientUrl = 'https://react-apollo.example.nhost.io/'
+allowedUrls = [
+  'https://midnightsociety.com/*',
+  'https://passkey-midnightsociety.vercel.app/*',
+  'http://localhost:3000/*',
+  'https://vsm-nft-fe.vercel.app/*',
+  'https://vsm-mod-dashboard.vercel.app/*',
+  'https://*-boomtv.vercel.app/*'
+]
 
 [auth.signUp]
 enabled = true
