@@ -28,10 +28,10 @@ httpPoolSize = 100
 version = 16
 
 [auth]
-version = '0.20.1'
+version = '0.21.2'
 
 [auth.redirections]
-clientUrl = 'http://localhost:3000'
+clientUrl = 'https://react-apollo.example.nhost.io/'
 
 [auth.signUp]
 enabled = true
@@ -63,15 +63,15 @@ expiresIn = 43200
 
 [auth.method]
 [auth.method.anonymous]
-enabled = false
+enabled = true
 
 [auth.method.emailPasswordless]
-enabled = false
+enabled = true
 
 [auth.method.emailPassword]
 hibpEnabled = false
 emailVerificationRequired = true
-passwordMinLength = 9
+passwordMinLength = 8
 
 [auth.method.smsPasswordless]
 enabled = false
@@ -124,13 +124,18 @@ enabled = false
 enabled = false
 
 [auth.method.webauthn]
-enabled = false
+enabled = true
+
+[auth.method.webauthn.relyingParty]
+name = 'nhost-example'
+origins = ['https://localhost:3000']
 
 [auth.method.webauthn.attestation]
 timeout = 60000
 
 [auth.totp]
-enabled = false
+enabled = true
+issuer = 'nhost'
 
 [postgres]
 version = '14.6-20230406-2'
@@ -138,7 +143,7 @@ version = '14.6-20230406-2'
 [provider]
 
 [storage]
-version = '0.3.5'
+version = '0.3.4'
 
 [observability]
 [observability.grafana]
