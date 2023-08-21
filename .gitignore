@@ -1,2 +1,11 @@
+.nhost
+web/node_modules
+node_modules
+functions/node_modules
+.DS_Store
+.env.development
+
+# typescript
+*.tsbuildinfo
 
 .secrets
