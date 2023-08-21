@@ -31,7 +31,7 @@ version = 16
 version = '0.21.2'
 
 [auth.redirections]
-clientUrl = 'https://react-apollo.example.nhost.io/'
+clientUrl = 'http://localhost:3000/*'
 allowedUrls = [
   'https://midnightsociety.com/*',
   'https://passkey-midnightsociety.vercel.app/*',
